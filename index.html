@@ -1,35 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src=script.js></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="websiteStyle.css" type='text/css'>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
+  <title>Sign Up</title>
 </head>
 
 <body>
-  <form action="#" onsubmit="return validate()">
-    <img src='Lab_assets/Lab_assets/bxs_leaf.svg' id='leaf'>
-    <p id='welcomeBack'><b>Welcome back!</b></p>
-    <p id='lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-    <div class=emailSection>
-      <input type="email" id="email" name="email" placeholder="Email" /><br>
-      <img src='Lab_assets/Lab_assets/mdi_email.svg' id='emailIcon'>
-    </div>
+  <main>
 
-    <div class='passwordSection'>
-      <input type="password" id="password" name="password" placeholder="Password"
-        oninvalid="this.setCustomValidity('Password can not be blank')" oninput="this.setCustomValidity('')" /><br>
-      <img src='Lab_assets/Lab_assets/material-symbols_lock.svg' id=passIcon>
-      <p id='forgetPassword'>Forgot Password?</p>
+
+    <div class="leftSide">
+      <h1>Learn to code by</br>watching others</h1>
+      <p>See how experienced developers solve problems in real-time.<br>
+        Watching scripted tutorials is great, but understanding how<br>
+        developers think is invaluable.
+      </p>
     </div>
 
 
-    <input id="signIn" type="submit" value="Sign In"><br>
-    <p id='noAccount'>Don't have an account? Sign Up <a id='link' href='index.html'>here</a></p>
-  </form>
+    <!--Right side -->
+    <div class="rightSide">
+      <div class="graphics">
+        <div id="trialBar">
+          <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+        </div>
+        <form>
+          <input type="text" id="fname" name="fname" placeholder="First Name" required
+            oninvalid="this.setCustomValidity('First name can not be blank')"
+            oninput="this.setCustomValidity('')" /><br>
+
+
+          <input type="text" id="lname" name="lname" placeholder="Last name" required
+            oninvalid="this.setCustomValidity('Last name can not be blank')" oninput="this.setCustomValidity('')" /><br>
+
+          <input type="email" id="email" name="email" placeholder="Email Address" required
+            oninvalid="this.setCustomValidity('Email Address can not be blank')"
+            oninput="this.setCustomValidity('')" /><br>
+
+          <input type="password" id="password" name="password" placeholder="Password" required
+            oninvalid="this.setCustomValidity('Password can not be blank')" oninput="this.setCustomValidity('')" /><br>
+
+          <input id="claim" type="submit" value="Claim Your Free Trial"><br>
+          <p>By clicking the button, you are agreeing to our <b><span style="color:red">Terms and Services</span></b>
+          </p>
+
+        </form>
+      </div>
+    </div>
+
+  </main>
 </body>
 
 </html>
